@@ -1,0 +1,10 @@
+[
+  {"trigger":{"url-filter":".*","if-domain":["*3djuegos.com","*xataka.com","*xatakamovil.com","*xatakandroid.com","*genbeta.com","*vidaextra.com","*espinof.com","*applesfera.com","*trendencias.com","*directoalpaladar.com","*motorpasion.com","*vitonica.com"]},"action":{"type":"css-display-none","selector":"div.ad"}},
+  {"trigger":{"url-filter":".*","if-domain":["*eleconomista.es"]},"action":{"type":"css-display-none","selector":".banners-superiores2, .banner_sticky, .bannerInferior"}},
+  {"trigger":{"url-filter":".*","if-domain":["*elmundo.es","*expansion.com","*marca.com","*telva.com"]},"action":{"type":"css-display-none","selector":"div.ue-c-ad, div.publicidad, div.skin-ad, #banda_suscripcion"}},
+  {"trigger":{"url-filter":".*","if-domain":["*bolsamania.com"]},"action":{"type":"css-display-none","selector":"div.ads-parent, div.header-banner"}},
+  {"trigger":{"url-filter":".*","if-domain":["*abc.es","*elcorreo.com","*diariovasco.com","*ideal.es","*laverdad.es","*diariosur.es","*lasprovincias.es"]},"action":{"type":"css-display-none","selector":".v-adv"}},
+  {"trigger":{"url-filter":".*","if-domain":["*elpais.com","*as.com"]},"action":{"type":"css-display-none","selector":"div.ad"}},
+  {"trigger":{"url-filter":".*","if-domain":["*20minutos.es","*heraldo.es"]},"action":{"type":"css-display-none","selector":".c-ads, .afs_ads, .ad-placement, .col-ads"}},
+  {"trigger":{"url-filter":".*","if-domain":["*elperiodico.com","*sport.es","*levante-emv.com","*farodevigo.es"]},"action":{"type":"css-display-none","selector":".ft-ad, .ft-layout-grid__ads-container"}}
+]
