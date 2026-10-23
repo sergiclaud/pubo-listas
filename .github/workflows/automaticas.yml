@@ -1,0 +1,37 @@
+# Lista «Automáticas» de pUbo: lunes y jueves se rehace desde EasyList Spanish (las reglas viejas
+# se sustituyen por las nuevas), se comprueba con WebKit en un Mac y, si cambió, se publica con un
+# número de versión nuevo. Si no compila, no se publica nada (y GitHub avisa por correo).
+name: Lista Automáticas
+
+on:
+  schedule:
+    - cron: "0 6 * * 1,4"     # lunes y jueves, 06:00 UTC (08:00 en España en verano)
+  workflow_dispatch: {}        # también a mano, desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Convertir EasyList Spanish
+        run: python3 scripts/convertir_easylist.py
+
+      - name: Comprobar con WebKit
+        run: swift scripts/validar.swift auto-rules.json
+
+      - name: Publicar si cambió
+        run: |
+          if git diff --quiet -- auto-rules.json && git ls-files --error-unmatch auto-rules.json >/dev/null 2>&1; then
+            echo "Sin cambios en EasyList Spanish: no se publica."
+            exit 0
+          fi
+          printf '{"version": %s}\n' "$(date -u +%Y%m%d%H%M)" > listas-version.json
+          git config user.name "pubo-listas[bot]"
+          git config user.email "pubo-listas@users.noreply.github.com"
+          git add auto-rules.json auto-origen.json listas-version.json
+          git commit -m "Automáticas: $(python3 -c 'import json;d=json.load(open("auto-origen.json"));print(f"{d[\"reglas\"]} reglas · EasyList Spanish {d[\"version_origen\"]}")')"
+          git push

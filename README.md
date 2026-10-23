@@ -9,4 +9,6 @@ reinstalar.
 | `ads-rules.json` | anuncios (genéricas + YouTube) |
 | `privacy-rules.json` | rastreadores y grabación de sesiones |
 | `es-rules.json` | «pUbo España»: huecos de anuncio por familia de medios |
-| `listas-version.json` | número de versión de las listas |
+| `auto-rules.json` | «Automáticas»: se rehace lunes y jueves desde EasyList Spanish (GitHub Actions) |
+| `auto-origen.json` | de qué versión de EasyList Spanish sale la lista automática |
+| `listas-version.json` | versión de las listas (fecha y hora, AAAAMMDDHHMM) |
