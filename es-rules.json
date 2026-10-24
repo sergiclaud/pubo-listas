@@ -3,8 +3,21 @@
   {"trigger":{"url-filter":".*","if-domain":["*eleconomista.es"]},"action":{"type":"css-display-none","selector":".banners-superiores2, .banner_sticky, .bannerInferior"}},
   {"trigger":{"url-filter":".*","if-domain":["*elmundo.es","*expansion.com","*marca.com","*telva.com"]},"action":{"type":"css-display-none","selector":"div.ue-c-ad, div.publicidad, div.skin-ad, #banda_suscripcion"}},
   {"trigger":{"url-filter":".*","if-domain":["*bolsamania.com"]},"action":{"type":"css-display-none","selector":"div.ads-parent, div.header-banner"}},
-  {"trigger":{"url-filter":".*","if-domain":["*abc.es","*elcorreo.com","*diariovasco.com","*ideal.es","*laverdad.es","*diariosur.es","*lasprovincias.es"]},"action":{"type":"css-display-none","selector":".v-adv"}},
+  {"trigger":{"url-filter":".*","if-domain":["*abc.es","*elcorreo.com","*diariovasco.com","*ideal.es","*laverdad.es","*diariosur.es","*lasprovincias.es","*larioja.com","*elcomercio.es","*elnortedecastilla.es","*hoy.es","*eldiariomontanes.es","*leonoticias.com","*burgosconecta.es","*lavozdigital.es"]},"action":{"type":"css-display-none","selector":".v-adv"}},
   {"trigger":{"url-filter":".*","if-domain":["*elpais.com","*as.com"]},"action":{"type":"css-display-none","selector":"div.ad"}},
   {"trigger":{"url-filter":".*","if-domain":["*20minutos.es","*heraldo.es"]},"action":{"type":"css-display-none","selector":".c-ads, .afs_ads, .ad-placement, .col-ads"}},
-  {"trigger":{"url-filter":".*","if-domain":["*elperiodico.com","*sport.es","*levante-emv.com","*farodevigo.es"]},"action":{"type":"css-display-none","selector":".ft-ad, .ft-layout-grid__ads-container"}}
+  {"trigger":{"url-filter":".*","if-domain":["*elperiodico.com","*sport.es","*levante-emv.com","*farodevigo.es","*laopiniondemalaga.es","*lne.es","*diariodemallorca.es","*informacion.es","*laprovincia.es","*laopinioncoruna.es","*eldia.es","*superdeporte.es","*diaridegirona.cat","*regio7.cat","*emporda.info","*diariocordoba.com","*elperiodicodearagon.com","*elperiodicoextremadura.com","*elperiodicomediterraneo.com","*mallorcazeitung.es","*epe.es"]},"action":{"type":"css-display-none","selector":".ft-ad, .ft-layout-grid__ads-container"}},
+  {"trigger":{"url-filter":".*","if-domain":["*lavanguardia.com","*mundodeportivo.com"]},"action":{"type":"css-display-none","selector":".module-box-ads"}},
+  {"trigger":{"url-filter":".*","if-domain":["*mundodeportivo.com"]},"action":{"type":"css-display-none","selector":"span.c-ads"}},
+  {"trigger":{"url-filter":".*","if-domain":["*diariodesevilla.es","*diariodecadiz.es","*europasur.es","*granadahoy.com","*malagahoy.es","*huelvainformacion.es","*diariodealmeria.es","*eldiadecordoba.es","*diariodejerez.es"]},"action":{"type":"css-display-none","selector":"div.board-advertising, aside.advertising--desktop, aside.advertising--mobile"}},
+  {"trigger":{"url-filter":".*","if-domain":["*eldiario.es"]},"action":{"type":"css-display-none","selector":"div.edi-advertising"}},
+  {"trigger":{"url-filter":".*","if-domain":["*publico.es"]},"action":{"type":"css-display-none","selector":"div.pb-ads"}},
+  {"trigger":{"url-filter":".*","if-domain":["*okdiario.com","*estadiodeportivo.com"]},"action":{"type":"css-display-none","selector":"aside.publicidad"}},
+  {"trigger":{"url-filter":".*","if-domain":["*elespanol.com"]},"action":{"type":"css-display-none","selector":"aside.adv"}},
+  {"trigger":{"url-filter":".*","if-domain":["*antena3.com"]},"action":{"type":"css-display-none","selector":"div.adv"}},
+  {"trigger":{"url-filter":".*","if-domain":["*lasexta.com"]},"action":{"type":"css-display-none","selector":"aside.ads"}},
+  {"trigger":{"url-filter":".*","if-domain":["*libertaddigital.com"]},"action":{"type":"css-display-none","selector":"div.dfp"}},
+  {"trigger":{"url-filter":".*","if-domain":["*vozpopuli.com"]},"action":{"type":"css-display-none","selector":"div.sticky-ad"}},
+  {"trigger":{"url-filter":".*","if-domain":["*theobjective.com"]},"action":{"type":"css-display-none","selector":"div.tno-banner"}},
+  {"trigger":{"url-filter":".*","if-domain":["*elplural.com"]},"action":{"type":"css-display-none","selector":"div.c-banner"}}
 ]
