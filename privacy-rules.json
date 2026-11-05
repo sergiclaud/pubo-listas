@@ -105,7 +105,17 @@
  },
  {
   "trigger": {
-   "url-filter": "glassbox"
+   "url-filter": "glassbox",
+   "resource-type": [
+    "image",
+    "style-sheet",
+    "script",
+    "font",
+    "raw",
+    "svg-document",
+    "media",
+    "ping"
+   ]
   },
   "action": {
    "type": "block"
@@ -186,6 +196,36 @@
  {
   "trigger": {
    "url-filter": "^https?://utiq\\."
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^[^:]+://+([^:/]+\\.)?permutive\\.com[:/]",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^[^:]+://+([^:/]+\\.)?permutive\\.app[:/]",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^[^:]+://+([^:/]+\\.)?servg1\\.net[:/]"
   },
   "action": {
    "type": "block"
