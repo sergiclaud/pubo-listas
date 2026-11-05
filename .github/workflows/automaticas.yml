@@ -5,7 +5,7 @@ name: Lista Automáticas
 
 on:
   schedule:
-    - cron: "0 6 * * 1,4"     # lunes y jueves, 06:00 UTC (08:00 en España en verano)
+    - cron: "0 6 * * 1,4"     # lunes y jueves, 06:00 UTC (07:00 en España en invierno, 08:00 en verano)
   workflow_dispatch: {}        # también a mano, desde la pestaña Actions
 
 permissions:
@@ -33,5 +33,6 @@ jobs:
           git config user.name "pubo-listas[bot]"
           git config user.email "pubo-listas@users.noreply.github.com"
           git add auto-rules.json auto-origen.json listas-version.json
-          git commit -m "Automáticas: $(python3 -c 'import json;d=json.load(open("auto-origen.json"));print(f"{d[\"reglas\"]} reglas · EasyList Spanish {d[\"version_origen\"]}")')"
+          MSG=$(python3 -c "import json; d=json.load(open('auto-origen.json')); print(str(d['reglas']) + ' reglas · EasyList Spanish ' + d['version_origen'])")
+          git commit -m "Automáticas: $MSG"
           git push
