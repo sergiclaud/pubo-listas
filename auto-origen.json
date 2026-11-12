@@ -1,11 +1,11 @@
 {
  "origen": "EasyList Spanish",
  "url": "https://easylist-downloads.adblockplus.org/easylistspanish.txt",
- "version_origen": "202611051042",
- "reglas": 1628,
+ "version_origen": "202611121426",
+ "reglas": 1629,
  "bloquear": 23,
  "terceros": 16,
- "rutas_y_recursos": 513,
+ "rutas_y_recursos": 514,
  "ocultar_webs": 1022,
  "excepciones": 54
 }
