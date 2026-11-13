@@ -1,9 +1,19 @@
 {
   "prune": [
-    "adPlacements", "adSlots", "playerAds", "adBreakHeartbeatParams",
-    "playerResponse.adPlacements", "playerResponse.adSlots", "playerResponse.playerAds", "playerResponse.adBreakHeartbeatParams",
-    "response.playerResponse.adPlacements", "response.playerResponse.adSlots", "response.playerResponse.playerAds",
-    "[].playerResponse.adPlacements", "[].playerResponse.adSlots", "[].playerResponse.playerAds"
+    "adPlacements",
+    "adSlots",
+    "playerAds",
+    "adBreakHeartbeatParams",
+    "playerResponse.adPlacements",
+    "playerResponse.adSlots",
+    "playerResponse.playerAds",
+    "playerResponse.adBreakHeartbeatParams",
+    "response.playerResponse.adPlacements",
+    "response.playerResponse.adSlots",
+    "response.playerResponse.playerAds",
+    "[].playerResponse.adPlacements",
+    "[].playerResponse.adSlots",
+    "[].playerResponse.playerAds"
   ],
   "nag": [
     "auxiliaryUi.messageRenderers.enforcementMessageViewModel",
@@ -11,9 +21,39 @@
     "response.playerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel",
     "[].playerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel"
   ],
-  "fetchURLs": ["/youtubei/v1/player"],
-  "nagSelectors": ["ytd-enforcement-message-view-model"],
+  "fetchURLs": [
+    "/youtubei/v1/player"
+  ],
+  "nagSelectors": [
+    "ytd-enforcement-message-view-model"
+  ],
   "timers": [
-    {"delay": 17000, "needle": "[native code]", "boost": 0.001}
-  ]
+    {
+      "delay": 17000,
+      "needle": "[native code]",
+      "boost": 0.001
+    }
+  ],
+  "disguises": [
+    {
+      "name": "lactmilli",
+      "params": "8AUB",
+      "lact": true
+    },
+    {
+      "name": "inline",
+      "inlineNoAd": true,
+      "lact": true
+    },
+    {
+      "name": "channel",
+      "clientScreen": "CHANNEL",
+      "lact": true
+    },
+    {
+      "name": "yahi",
+      "params": "YAHI"
+    }
+  ],
+  "stallMs": 1500
 }
