@@ -15,7 +15,7 @@ jobs:
   actualizar:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Convertir EasyList Spanish
         run: python3 scripts/convertir_easylist.py
